@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Edit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+
+        }
+
+        .nav {
+            margin: 0;
+            background-color: #ffdd00;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav2 {
+            background-color: #f3f3f1;
+            height: 85px;
+            
+            border: 1px solid black;
+            margin: 10px 70px;
+            display: flex;
+            padding: 0 20px;
+
+            align-items: center;
+
+        }
+
+        
+        .ul1 {
+            display: inline-flex;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .ul2 {
+            display: inline-flex;
+            /* justify-content: center; */
+            align-items: center;
+            margin-left: auto;
+            margin-right: 10px;
+
+
+
+        }
+
+        ul {
+            display: flex;
+        }
+
+        ul li {
+            list-style: none;
+            margin: 10px;
+        }
+
+        img {
+            height: 20px;
+            display: flex;
+        }
+
+        .logocontainer {
+            display: flex;
+            flex-direction: column;
+
+
+            margin-top: 15px;
+            margin-right: 10px;
+
+        }
+
+        .logoname {
+
+            font-size: 20px;
+            font-weight: bold;
+            padding: 0;
+        }
+
+        .tagline {
+            margin: 0;
+            margin: 0;
+        }
+
+        .tagline {
+            margin-left: 10px;
+        }
+
+        .logo {
+            display: flex;
+            height: 50px;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+
+        .brand {
+            display: flex;
+            margin-right: auto;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .download {
+            display: flex;
+            font-weight: 0;
+            font-size: 30px;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+
+        }
+
+        .bio1 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .bio {
+            display: flex;
+            font-weight: 0;
+            font-size: 20px;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .indent {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px
+        }
+
+        .dbtun {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+
+        }
+
+        .dbtun button {
+            font-weight: 100;
+            font-size: 15px;
+            border: none;
+            border-radius: 5px;
+            padding: 15px 25px;
+            background-color: #f7d603;
+            color: black;
+            transition: all 0.3s ease;
+
+        }
+
+        button:hover {
+            background-color: #faeb69;
+            transform: translateY(-2px);
+            
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .versionblock {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 10px;
+        }
+
+        .version {
+            display: flex;
+            font-weight: 300;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            margin: 20 10px;
+        }
+
+        .logo2 {
+            display: flex;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-right: 10px;
+            ;
+        }
+
+        .editor {
+            display: flex;
+            margin: 40px 0px;
+            font-size: 50px;
+            font-weight: 600;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .features {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* margin: 20px; */
+        }
+
+        .row1 {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .row2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .row3 {
+            display: flex;
+            flex-direction: row;
+        }
+
+
+        .l {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            width: 400px;
+            margin: 10px;
+
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            font-weight: 450;
+        }
+
+        .featurepic {
+            height: 50px;
+            margin: 10px;
+
+        }
+
+
+
+
+        .last {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+
+            width: 100%;
+            padding: 40px;
+            box-sizing: border-box;
+            background-color: #f3f3f1;
+        }
+
+
+
+
+
+        .footer {
+            height: auto;
+            width: 100%;
+            background-color: #2e2e2e;
+            margin-top: 70px;
+            border-radius: 15px;
+            color: white;
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .firsthalf {
+            width: 30%;
+            height: auto;
+
+        }
+
+        .secondhalf {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            width: 70%;
+            margin: 30px;
+
+
+        }
+
+        .ul3 li {
+            margin: 5px 0px;
+            font-weight: 300;
+        }
+
+        .ul3 li:first-child {
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        .ul3 {
+            display: flex;
+            flex-direction: column;
+            margin: 0px 40px;
+            font-size: 14px;
+            gap: 1px;
+        }
+
+        .logo3 {
+            height: 50px;
+            margin: 10px;
+        }
+
+        .logocontain {
+            margin: 30px;
+            height: auto;
+        }
+
+        h4 {
+            font-size: 15px;
+            font-weight: 300;
+            margin-top: 10px;
+        }
+
+        .news {
+            margin: 30px;
+            height: auto;
+
+        }
+
+        .newsletter {
+            font-weight: 700;
+        }
+
+        .subscribe-container {
+            display: flex;
+            align-items: stretch;
+            /* Fixes vertical alignment */
+            max-width: 300px;
+            border-radius: 5px;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            /* Added a border so you can see the box shape */
+        }
+
+        input[type="email"] {
+            flex-grow: 1;
+            border: none;
+            padding: 10px 15px;
+            outline: none;
+            color: black;
+            font-size: 14px;
+            
+        }
+
+        button {
+            background-color: #FFD741;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s;
+            font-size: 14px;
+            
+            line-height: 1;
+            
+        }
+
+        button:hover {
+            background-color: #ffe37c;
+            transform: none !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">UE Core & Enterprise Subscriptions: Get 10% Off on your second year! Buy Now →</div>
+    <div class="nav2">
+        <div class="brand">
+            <img class="logo" src="UElogo.png" alt="UELOGO">
+            <div class="logocontainer">
+                <div class="logoname">UltraEdit</div>
+                <div class="tagline">By Embarcadero</div>
+            </div>
+        </div>
+        <ul class="ul1">
+            <li>Product</li>
+            <li>Buy</li>
+            <li>Support</li>
+            <li>Learn</li>
+            <li>Company</li>
+        </ul>
+        <ul class="ul2">
+            <li>Downlod</li>
+            <li>English</li>
+            <li><img src="searchlogo.png" alt=""></li>
+        </ul>
+    </div>
+    <div class="maincontent">
+        <div class="download">
+            <h1>Download UltraEdit for Windows</h1>
+        </div>
+        <div class="bio1">
+            <div class="bio">Download and try UltraEdit before you buy it! This download </div>
+            <div class="indent">includes the full Windows version of the text editor.</div>
+
+        </div>
+        <div class="dbtun"><button>Download Mac Or Linux Version -></button></div>
+        <div class="versionblock">
+            <img class="logo2" src="UElogo.png" alt="UELOGO">
+            <div class="version">Download UltraEdit v2025.2 (released 2026-01-29) | Latest changes </div>
+        </div>
+
+
+
+
+        <div class="last">
+            <div class="editor">Editor Features</div>
+            <div class="features">
+                <div class="row1">
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Custom themes and layouts
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Find and replace
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Multi-caret/multi-select
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Column / block mode
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        HTML / Markdown live preview
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Text and file search
+                    </div>
+                </div>
+                <div class="row3">
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        Integrated FTP, SSH & Telnet
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        File and folder compare
+                    </div>
+                    <div class="l">
+                        <img src="uefeature.png" alt="uefeature" class="featurepic">
+                        XML handling
+                    </div>
+                </div>
+            </div>
+            .
+            <div class="footer">
+                <div class="firsthalf">
+                    <div class="logocontain">
+                        <img class="logo3" src="UElogo.png" alt="UELOGO">
+                        <h3>UltraEdit</h3>
+                        <h4>UltraEdit is the powerful text editor built for developers, data wranglers, and IT pros
+                            handling large files and complex tasks.</h4>
+                    </div>
+                    <div class="news">
+                        <h4 class="newsletter">Newsletter Signup</h4>
+                        <h4>Stay updated on new features, tutorials, and exclusive offers.</h4>
+                    </div>
+                    <div class="subscribe-container">
+                        <input type="email" placeholder="Enter your email" aria-label="Email address" required>
+                        <button type="submit">Subscribe</button>
+                    </div>
+
+                </div>
+                <div class="secondhalf">
+                    <ul class="ul3">
+                        <li>Company</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+
+                    </ul>
+                    <ul class="ul3">
+                        <li>UltraEdit (Windows / Mac / Linux)</li>
+                        <li>UltraCompare</li>
+                        <li>UltraFTP</li>
+                        <li>UEStudio</li>
+                        <li>All Products</li>
+                    </ul>
+                    <ul class="ul3">
+                        <li>Support</li>
+                        <li>Help Center</li>
+                        <li>Licensing & Activation</li>
+                        <li>File a Support Ticket</li>
+                        <li>Documentation</li>
+                        <li>Community Forums</li>
+                    </ul>
+                    <ul class="ul3">
+                        <li>Legal</li>
+                        <li>Privacy Policy</li>
+                        <li>Refund Policy</li>
+                        <li>License Agreement</li>
+
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
