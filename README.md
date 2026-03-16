@@ -3,8 +3,7 @@
 A high-fidelity front-end reconstruction of the UltraEdit homepage, built to demonstrate proficiency in modern CSS layout techniques, including Flexbox and CSS Grid.
 
 ## 🚀 Live Demo
-[View the live project here](https://arpitverma.github.io/ultraedit-clone/) *(Update this with your actual GitHub Pages link)*
-
+[View the live project here]( https://arpitvermma.github.io/ultraedit-website-layout/) 
 ## 🛠️ Technical Highlights
 
 * **Semantic HTML5:** Used structured elements like `nav`, `div` containers, and descriptive class names for better code readability.
